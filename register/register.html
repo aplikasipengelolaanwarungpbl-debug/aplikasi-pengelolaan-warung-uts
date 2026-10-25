@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+  <div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+  <div class="card d-flex flex-column align-items-center p-3" style="width: 30rem;">
+  <div class="d-flex align-item-center gap-2">
+  <img src="../asset/logo.png" alt="Logo" style="width: 30px; height: 30px;">
+  <h3 class="text-primary mb-0">WarungKu</h3>
+  </div>
+  <div class="card-body">
+    <div class="text-center p-4">
+    <h5 class="card-title mb-0">Daftar Warung Baru</h5>
+    <p class="card-text">Buat akun untuk mulai mengelola warung</p>
+      </div>
+    <div class="d-flex align-item-center gap-2">
+      <i class="bi bi-shop text-primary gap-2"></i>
+    <p class="text-primary">Informasi Warung</p>
+    </div>
+    <div class="mb-3">
+      <label for="namaWarung" class="form-label text-secondary">Nama Warung
+        <span class="text-danger">*</span>
+      </label>
+      <input type="text" class="form-field form-control" placeholder="Contoh: Warung Berkah Makmur" required>
+    </div>
+    <div class="mb-3">
+      <label for="noTelpWarung" class="form-label text-secondary">No Telepon Warung <span style="color: #48494c;">(Opsional)</span>
+      </label>
+      <input type="tel" class="form-field form-control" placeholder="Contoh: 021-xxxxx / 08-xxxxx">
+    </div>
+    <div class="mb-3">
+      <label for="alamatWarung" class="form-label text-secondary">Alamat Warung <span style="color: #48494c;">(Opsional)</span>
+      </label>
+      <input type="text" class="form-field form-control" placeholder="Contoh: Jl.Merdeka No. 10">
+    </div>
+    <hr class="my-4">
+
+    <div class="d-flex align-item-center gap-2">
+      <i class="bi bi-person text-primary gap-2"></i>
+    <p class="text-primary">Data Pemilik Warung</p>
+    </div>
+    <div class="mb-3">
+      <label for="namaOwner" class="form-label text-secondary">Nama Lengkap
+        <span class="text-danger">*</span>
+      </label>
+      <input type="text" class="form-field form-control" placeholder="Contoh: Iqbal Dezwan" required>
+    </div>
+    <div class="row mb-3">
+      <div class="col md-6">
+        <label for="emailOwner" class="form-label text-secondary">Email
+        <span class="text-danger">*</span>
+      </label>
+      <input type="email" class="form-field form-control" placeholder="Contoh: nama@gmail.com" required>
+      </div>
+      <div class="col md-6">
+        <label for="noTelpOwner" class="form-label text-secondary">No. WhatsApp / HP
+        <span class="text-danger">*</span>
+      </label>
+      <input type="tel" class="form-field form-control" placeholder="Contoh: 081234567890" required>
+      </div>
+    </div>
+
+    <div mb-3>
+      <label for="username" class="form-label text-secondary">Username Login
+        <span class="text-danger">*</span>
+      </label>
+      <input type="text" class="form-field form-control" placeholder="Contoh: iqbaldezwan" required>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col md-6">
+        <label for="password" class="form-label text-secondary">Password
+        <span class="text-danger">*</span>
+      </label>
+      <input type="password" class="form-field form-control" placeholder="Contoh: min. 6 Karakter" required>
+      </div>
+      <div class="col md-6">
+        <label for="noTelpOwner" class="form-label text-secondary">Konfirmasi
+        <span class="text-danger">*</span>
+      </label>
+      <input type="tel" class="form-field form-control" placeholder="Contoh: Ulangi Password" required>
+      </div>
+    </div>
+
+    </div>
+    <div>
+    <button type="submit" class="btn btn-primary w-100 fw-bold d-flex align-items-center justify-content-center gap-2 py-2">
+      <i class="bi bi-check-circle fs-5"></i>
+      <span>Daftar Warung Sekarang</span></button>
+    </div>
+  
+</div>
+</div>
+  </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

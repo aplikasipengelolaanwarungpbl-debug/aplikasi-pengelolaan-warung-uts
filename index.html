@@ -1,10 +1,112 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Judul Halaman</title>
-  </head>
-  <body>
-    <h1>Selamat Datang</h1>
-    <p>Ini adalah paragraf pertama saya.</p>
-  </body>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halaman Bootstrap Sederhana</title>
+
+  <!-- Bootstrap CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Situs Saya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="py-5 bg-light text-center">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Selamat Datang!</h1>
+      <p class="lead">Ini adalah halaman sederhana yang dibuat dengan HTML dan Bootstrap.</p>
+      <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalInfo">Klik Saya</button>
+    </div>
+  </header>
+
+  <!-- Kartu -->
+  <section class="container my-5" id="layanan">
+    <h2 class="text-center mb-4">Layanan Kami</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Desain Web</h5>
+            <p class="card-text">Tampilan website yang rapi dan responsif di semua perangkat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Pengembangan</h5>
+            <p class="card-text">Membangun fitur website sesuai kebutuhan Anda.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Dukungan</h5>
+            <p class="card-text">Bantuan dan perawatan agar website tetap berjalan lancar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulir -->
+  <section class="container mb-5" id="kontak">
+    <h2 class="text-center mb-4">Hubungi Kami</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="nama" class="form-label">Nama</label>
+          <input type="text" class="form-control" id="nama" placeholder="Nama Anda">
+        </div>
+        <div class="mb-3">
+          <label for="pesan" class="form-label">Pesan</label>
+          <textarea class="form-control" id="pesan" rows="3" placeholder="Tulis pesan..."></textarea>
+        </div>
+        <button class="btn btn-success w-100">Kirim</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <small>&copy; 2026 Situs Saya</small>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalInfo" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Halo!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">Bootstrap berhasil berjalan 🎉</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
